@@ -16,7 +16,7 @@ in here explain the files and what they do
 
 The code uses experimental data from MallARD. Joypad input and MallARD position are recorded in the experiments. The mathematical model predicts velocities and position using the joypad inputs and identified model coefficients. Model and coefficients were taken from XXXXXXXXXX.
 
-## To run the MalARD simulation
+## To run the MallARD simulation
 
 How to run the simulation
 

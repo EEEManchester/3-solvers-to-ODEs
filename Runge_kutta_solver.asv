@@ -210,17 +210,14 @@ t_PSI = linspace(0, tsf(end), length(PSI_dot));
 t_force = linspace(0, tsf(end), length(f_u));
 %% Plot
 
-time_axis_lims = [0 250];
-lin_vel_lims = [-0.5 0.5];
-
 figure(1)
 
 subplot(2,3,1)
 plot(t1, u)
 hold on
 plot(tuv, X_dot_B)
-xlim(time_axis_lims)
-ylim(lin_vel_lims)
+xlim([0 250])
+ylim([-0.5 0.8])
 title('u-velocity')
 xlabel('time(s)')
 ylabel('u(m/s)','rotation',0)
@@ -230,8 +227,6 @@ subplot(2,3,2)
 plot(t1, v)
 hold on
 plot(tuv, Y_dot_B)
-xlim(time_axis_lims)
-ylim(lin_vel_lims)
 title('v-velocity')
 xlabel('time(s)')
 ylabel('v(m/s)','rotation',0)
@@ -241,8 +236,6 @@ subplot(2,3,3)
 plot(t1, r)
 hold on
 plot(t_PSI, PSI_dot)
-xlim(time_axis_lims)
-ylim(lin_vel_lims)
 title('r-yaw rate')
 xlabel('time(s)')
 ylabel('r(rad/s)','rotation',0)
@@ -250,8 +243,6 @@ legend('Runge-kutta solver', 'measured velocity')
 
 subplot(2,3,4)
 plot(t_force, f_u)
-xlim(time_axis_lims)
-ylim(lin_vel_lims)
 title('f_u-force')
 xlabel('time(s)')
 ylabel('f_u(N)','rotation',0)
@@ -259,21 +250,16 @@ ylabel('f_u(N)','rotation',0)
 
 subplot(2,3,5)
 plot(t_force, f_v)
-xlim(time_axis_lims)
-ylim(lin_vel_lims)
 title('f_v-force')
 xlabel('time(s)')
 ylabel('f_v(N)','rotation',0)
 
 subplot(2,3,6)
 plot(t_force, f_r)
-xlim(time_axis_lims)
-ylim(lin_vel_lims)
 title('f_r-force')
 xlabel('time(s)')
 ylabel('f_r(N)','rotation',0)
 
-%% displacement plot
 figure(2)
 quiver(positionGlobalX, positionGlobalY, x_, y_)
 %% 
