@@ -4,7 +4,7 @@ In this task, there are three ODE solvers for mathmatical model of MallARD. The 
 
 All of the three models are tested using the datasets form Marin and Keir. Dataset "X" is predominantly excited in X_b by control inputs in F_u. Dataset "Y" and "PSI" excitation is focused on Y_b and by F_v and F_r, respectively.  In the datasets "XTPSI", MallARD was excited in all degrees of freedom and was driven in squares, circles and figures of eight, which are motions that could be expected in practice. 
 
-## Clone the repo
+## Clone the repository
 
     git clone https://github.com/Xue1iang/3-solvers-to-ODEs.git
 
