@@ -1,8 +1,8 @@
 clear
 close all
 
-force = xlsread("C:\Users\lenovo\Desktop\mathmatical model to IROS_2020\data\PSI\PSI_1\joystick.csv");
-pose_slam = xlsread("C:\Users\lenovo\Desktop\mathmatical model to IROS_2020\data\PSI\PSI_1\pose_slam.csv");
+force = xlsread("data\PSI\PSI_1\joystick.csv");
+pose_slam = xlsread("data\PSI\PSI_1\pose_slam.csv");
 %% Setup
 
 % L - number of the position measurements
