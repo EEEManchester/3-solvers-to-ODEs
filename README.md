@@ -23,12 +23,9 @@ Before your running, do not forget to change the address in xlsread('') for choo
 ## Explanation about plots
 
 ### OED45
-1. Plots
-Plots show the measured velocity v in Yb taken from dataset '\XYPSI\XYPSI_1\' against the estimated velocity in Yb for the classical parametric model. Fv is the control input. Yb is the y axis in body-fixed frame.
+1. Plots show the measured velocity v in Yb taken from dataset '\XYPSI\XYPSI_1\' against the estimated velocity in Yb for the classical parametric model. Fv is the control input. Yb is the y axis in body-fixed frame.
 
 ![OED_45](https://user-images.githubusercontent.com/77399327/114861698-2f9ea400-9e20-11eb-96ad-68707e82ad66.jpg)
-
-2. Quiverplot
 
 
 ### Runge-Kutta Method
@@ -37,6 +34,6 @@ This method is mainly applied when the derivative and initial value information 
 
 
 ### Euler's Method
-The accuracy of this solver can be changed via changing the step.
+Euler's method is an important type of numerical solution. This type of method avoids solving the function expression, but seeks its approximate value on a series of discrete nodes. The distance between two adjacent nodes is called the step. The accuracy of this solver can be changed via changing the step.
 ![Euler's method](https://user-images.githubusercontent.com/77399327/114861788-4f35cc80-9e20-11eb-9fee-735ae23f09ba.jpg)
 
